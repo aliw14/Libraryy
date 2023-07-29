@@ -12,7 +12,7 @@ namespace Library.DAL.Repositories.Author
 
         public async Task<ICollection<Entities.Author>> Test()
         {
-            var result = (await base.GetAllAsync()).Where(x => x.Firstname == "Adolf").ToList();
+            var result = (await base.GetAllAsync()).Where(x => x.Firstname == "Jimmy").ToList();
 
             return result;
         }
