@@ -13,7 +13,7 @@ namespace Library.DAL.Repositories.Book
 
         public async Task<ICollection<Entities.Book>> Test()
         {
-            var result = (await base.GetAllAsync()).Where(x => x.Description == "Roman").ToList();
+            var result = (await base.GetAllAsync()).Where(x => x.Description == "Fairytale").ToList();
 
             return result;
         }
